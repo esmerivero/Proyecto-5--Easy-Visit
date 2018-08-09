@@ -9,6 +9,7 @@ btnRegistrar.addEventListener('click', e => {
         alert("Ingresa los datos Gracias")
     } else {
         db.collection("visitors").add({
+            createdAt: firebase.firestore.FieldValue.serverTimestamp(),
             name: name,
             mail: email,
             personVisit: personVisit,
