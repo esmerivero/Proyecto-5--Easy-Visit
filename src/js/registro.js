@@ -28,6 +28,3 @@ btnRegistrar.addEventListener('click', e => {
             });
     }
 });
-
-
-
