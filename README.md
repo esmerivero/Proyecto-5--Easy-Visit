@@ -1,6 +1,6 @@
 # Registro de Visitantes
 
-![EASY VISIT](src/images/easyvisit.jpg)
+![EASY VISIT](src/images/easyvisit.png)
 
 ## Preámbulo
 
