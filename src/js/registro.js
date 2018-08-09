@@ -20,7 +20,7 @@ btnRegistrar.addEventListener('click', e => {
                 document.getElementById('email').value = "";
                 document.getElementById('personVisit').value = "";
                 document.getElementById('company').value = "";
-
+                window.location.href = 'camera.html';
             })
             .catch(function (error) {
                 console.error("Error adding document: ", error);
