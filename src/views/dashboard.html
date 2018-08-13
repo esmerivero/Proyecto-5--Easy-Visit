@@ -3,27 +3,64 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Administración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/dashboard.css">
 </head>
 <body>
-    <table>
-            <thead>
-                <tr>
-                    <th>Nombre del visitante</th>
-                    <th>Correo</th>
-                    <th>Hora de entrada</th>
-                    <th>Compañia que visita</th>
-                    <th>Nombre anfitrión</th>
-                </tr>
-            </thead>
-    
-            <tbody id = "table-body-visitors">
-            </tbody>
-            </table>        
+    <div class="container">
+        <section class="row">
+            <section class="col">
+
+                <!-- Nav -->
+                <section class="row">
+                    <section class="col">
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                <div>
+                                    <img src="../images/logoeblancoazul.png" id = "logo">
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-8"></div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                <button type="button" class="btn btn-primary">Cerrar sesión</button>
+                            </div>
+                        </nav>
+                    </section>
+                </section>
+
+                <section class="row" id = "margin"></section>
+
+                <!-- Tabla -->
+                <section class="row">
+                    <section class="col">
+                        <section class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Nombre del visitante</th>
+                                            <th scope="col">Correo</th>
+                                            <th scope="col">Día de entrada</th>
+                                            <th scope="col">Hora de entrada</th>
+                                            <th scope="col">Compañia que visita</th>
+                                            <th scope="col">Nombre anfitrión</th>
+                                        </tr>
+                                    </thead>
+                            
+                                    <tbody id = "table-body-visitors">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+        </section>
+    </div>        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
