@@ -1,4 +1,3 @@
-
 btnRegistrar.addEventListener('click', e => {
   let name = document.getElementById('name').value;
   let email = document.getElementById('email').value;
@@ -34,6 +33,7 @@ btnRegistrar.addEventListener('click', e => {
 
       })
       .catch(function (error) {
+
         console.error('Error adding document: ', error);
       });
   }
