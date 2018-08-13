@@ -5,7 +5,7 @@ btnRegistrar.addEventListener('click', e => {
   let company = document.getElementById('company').value;
 
   if (name === '' || email === '' || personVisit === '' || company === '') {
-    alert('Ingresa los datos Gracias')
+    alert('Ingresa los datos Gracias');
   } else {
     db.collection('visitors').add({
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
