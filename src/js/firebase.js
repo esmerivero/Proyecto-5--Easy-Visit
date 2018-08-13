@@ -32,8 +32,11 @@ window.signInUser = (email, password) => {
     .catch(error => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      alert(errorCode);
-      alert(errorMessage);
+      if (errorCode === 'auth/wrong-password') {
+        alert('Verifica la contraseña.');
+      } else if (errorCode === 'auth/user-not-found' || errorCode === 'auth/invalid-email' || errorCode === 'auth/argument-error') {
+        alert('Por favor verifica tu usuario');
+      }
     });
 };
 
