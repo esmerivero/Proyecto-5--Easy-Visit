@@ -1,6 +1,6 @@
 // Initialize
 // Initialize Firebase
-var config = {
+let config = {
   apiKey: 'AIzaSyDmI0IERvjSq0334ndUnRMb09SyKuE4mMI',
   authDomain: 'taller-firebase-4e2b1.firebaseapp.com',
   databaseURL: 'https://taller-firebase-4e2b1.firebaseio.com',
@@ -9,20 +9,11 @@ var config = {
   messagingSenderId: '521580200060'
 };
 firebase.initializeApp(config);
-/* window.initializeFirebase = () => {
-  firebase.initializeApp({
-    apiKey: 'AIzaSyDmI0IERvjSq0334ndUnRMb09SyKuE4mMI',
-    authDomain: 'taller-firebase-4e2b1.firebaseapp.com',
-    databaseURL: 'https://taller-firebase-4e2b1.firebaseio.com',
-    projectId: 'taller-firebase-4e2b1',
-    storageBucket: 'taller-firebase-4e2b1.appspot.com',
-    messagingSenderId: '521580200060'
-  });
-}; */
+
 let database = firebase.database();
 let db = firebase.firestore();
 
-/*
+
 window.signInUser = (email, password) => {
   firebase
     .auth()
@@ -49,4 +40,4 @@ window.signOut = () => {
     }).catch(error => {
       alert('Error al cerrar sesión', error);
     });
-}; */
+};
