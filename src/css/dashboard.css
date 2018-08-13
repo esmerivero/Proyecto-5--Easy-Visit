@@ -1,8 +1,8 @@
-#margin{
-    margin-top: 5%;
+#logo{
+    height: 60%;
+    width: 60%; 
 }
 
-#logo{
-    width: 60%;
-    height: 60%;
+#margin{
+    margin-top: 5%;
 }
