@@ -13,6 +13,13 @@ firebase.initializeApp(config);
 let database = firebase.database();
 let db = firebase.firestore();
 
+document.getElementById('btn-loginaitor').addEventListener('click', event => {
+  console.log('diste un click');
+  event.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  signInUser(email, password);
+});
 
 window.signInUser = (email, password) => {
   firebase
