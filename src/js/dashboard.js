@@ -25,3 +25,17 @@ query.get().then(function(querySnapshot) {
                             </tr>`;
   });
 });
+
+const btnLogout = document.getElementById('btn-logout');
+
+btnLogout.addEventListener('click', function() {
+  firebase
+    .auth()
+    .signOut()
+    .then(event => {
+      location.href = '../views/login.html';
+      alert('Saliendo...');
+    }).catch(error => {
+      alert('Error al cerrar sesión', error);
+    });
+});
